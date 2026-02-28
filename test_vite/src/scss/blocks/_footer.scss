@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.footer {
+  padding: fluid(23, 12) 0;
+  background-color: #424141;
+  // .footer__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: rem(30);
+  }
+
+  // .footer__logo
+  &__logo {
+    max-width: fluid(210, 112);
+  }
+
+  // .footer__info
+  &__info {
+    @include fluid-text(12, 10);
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+      order: 1;
+    }
+  }
+
+  // .footer__policy
+  &__policy {
+  }
+
+  // .footer__copyright
+  &__copyright {
+  }
+
+  // .footer__socials
+  &__socials {
+  }
+}

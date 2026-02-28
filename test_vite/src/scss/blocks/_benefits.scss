@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.benefits {
+  padding-top: fluid(80, 60);
+  // .benefits__inner
+  &__inner {
+  }
+
+  // .benefits__title
+  &__title {
+    margin-bottom: fluid(60, 25);
+  }
+
+  // .benefits__cards
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    gap: 14px;
+  }
+
+  // .benefits__card
+  &__item {
+  }
+}
+
+
+
+

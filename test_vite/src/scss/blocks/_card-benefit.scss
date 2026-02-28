@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.card-benefit {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+
+  // .card-benefit__icon
+  &__icon {
+  }
+
+  // .card-benefit__description
+  &__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #393838;
+    span {
+      color: var(--color-accent);
+    }
+  }
+}

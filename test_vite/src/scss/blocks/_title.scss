@@ -1,0 +1,7 @@
+@use '../helpers' as *;
+
+.title {
+  @include fluid-text(42, 24);
+  font-weight: 500;
+  color: var(--color-dark);
+}

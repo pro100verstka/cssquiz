@@ -1,0 +1,30 @@
+@use '../helpers' as *;
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: fluid(18, 8);
+
+  // .stat__number
+  &__number {
+    position: relative;
+    @include fluid-text(88, 50);
+    font-weight: 300;
+    color: var(--color-dark);
+  }
+
+  // .stat__plus
+  &__plus {
+    position: absolute;
+    top: fluid(10, -20);
+    font-size: rem(40);
+    color: var(--color-accent);
+  }
+
+  // .stat__label
+  &__label {
+    @include fluid-text(24, 16);
+  }
+}

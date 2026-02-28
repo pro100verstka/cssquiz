@@ -1,0 +1,67 @@
+@use '../helpers' as *;
+
+.delivery {
+  // .delivery__inner
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  // .delivery__content
+  &__content {
+    max-width: 580px;
+  }
+
+  // .delivery__title
+  &__title {
+    margin-bottom: fluid(30, 23);
+  }
+
+  // .delivery__text
+  &__text {
+    @include fluid-text(20, 14);
+    margin-bottom: fluid(36, 25);
+    color: #1e1e1c;
+  }
+
+  // .delivery__steps
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: fluid(58, 15);
+    color: #1e1e1c;
+  }
+
+  // .delivery__step
+  &__step {
+    position: relative;
+    font-size: rem(16);
+    padding-left: 43px;
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../../assets/img/star.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include mobile {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  // .delivery__contacts
+  &__contacts {
+    min-width: 50%;
+  }
+}
+
+

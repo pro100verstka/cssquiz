@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+.callback {
+  background-color: #f8f8f8;
+  // .callback__inner
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(20);
+
+    @include mobile {
+      flex-direction: column;
+      gap: rem(30);
+    }
+  }
+
+  // .callback__content
+  &__content {
+    padding-top: rem(33);
+    max-width: rem(500);
+
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+
+  // .callback__title
+  &__title {
+    margin-bottom: rem(23);
+  }
+
+  // .callback__subtitle
+  &__subtitle {
+    @include fluid-text(28, 16);
+    color: var(--color-accent);
+    margin-bottom: fluid(30, 15);
+  }
+
+  // .callback__text
+  &__text {
+    @include fluid-text(22, 14)
+  }
+
+  // .callback__form
+  &__form {
+  }
+}

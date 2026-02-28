@@ -1,0 +1,52 @@
+@use '../helpers' as *;
+
+.about {
+  // .about__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  // .about__content
+  &__content {
+    flex: 1.5;
+    max-width: 600px;
+  }
+
+  // .about__title
+  &__title {
+    @include fluid-text(42, 22);
+    margin-bottom: fluid(28, 25);
+  }
+
+  // .about__text
+  &__text {
+    @include fluid-text(18, 14)
+  }
+
+  // .about__stats
+  &__stats {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 700px;
+    width: 100%;
+    padding-top: fluid(105, 40);
+    padding-bottom: fluid(145, 48);
+    padding-inline: rem(75);
+    border-radius: rem(24);
+    background-color: #f8f8f8;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}
+
+

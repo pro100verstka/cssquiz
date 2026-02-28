@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../assets/img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  @include mobile {
+    background-position: right -180px center ;
+  }
+
+  // .hero__inner
+  &__inner {
+    flex: 1;
+    padding-top: fluid(200, 100);
+    padding-bottom: rem(20);
+  }
+
+  // .hero__content
+  &__content {
+    max-width: rem(830);
+    color: var(--color-light);
+  }
+
+  // .hero__title
+  &__title {
+    @include fluid-text(60, 32);
+    font-weight: 700;
+    margin-bottom: rem(30);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroText 1s ease forwards;
+  }
+
+  // .hero__text
+  &__text {
+    margin-bottom: rem(60);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroText 1s ease forwards 0.3s;
+  }
+
+  // .hero__button
+  &__button {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroText 1s ease forwards 0.6s;
+  }
+
+  @keyframes heroText {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+

@@ -1,0 +1,54 @@
+@use '../helpers' as *;
+
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: fluid(30, 10) 0;
+  background-color: transparent;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    padding var(--transition-duration) ease,
+    background-color var(--transition-duration) ease,
+    backdrop-filter var(--transition-duration) ease,
+    box-shadow var(--transition-duration) ease,
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  &.scrolled {
+    padding: rem(10) 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    & .header__logo img {
+      transform: scale(0.85);
+      transition: transform 0.3s ease;
+    }
+  }
+  &.is-loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  // .header__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10);
+  }
+
+  // .header__logo
+  &__logo {
+    position: relative;
+    z-index: 100;
+    flex-shrink: 0;
+    max-width: fluid(210, 112);
+  }
+
+  // .header__menu
+  &__menu {
+  }
+}

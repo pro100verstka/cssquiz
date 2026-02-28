@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.button {
+  @include fluid-text(22, 16);
+  padding: rem(20) rem(36);
+  border-radius: rem(8);
+  background-color: var(--color-accent);
+  font-weight: 500;
+  color: #fff;
+  transition: var(--transition-duration);
+
+  @include hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+}

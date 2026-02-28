@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: fluid(25, 5);
+  // .socials__item
+  &__item {
+  }
+
+  // .socials__link
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: rem(44);
+    min-height: rem(44);
+    transition: var(--transition-duration);
+
+    @include hover {
+      transform: scale(1.15);
+    }
+  }
+}

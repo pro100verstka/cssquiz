@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.card-material {
+  width: 100%;
+  height: fluid(524, 226);
+  display: flex;
+  align-items: flex-end;
+  padding: fluid(40, 25);
+  border-radius: rem(8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: var(--transition-duration);
+  cursor: pointer;
+
+  &_01 {
+    background-image: url('../../assets/img/materials/01.jpg');
+  }
+  &_02 {
+    background-image: url('../../assets/img/materials/02.jpg');
+  }
+  &_03 {
+    background-image: url('../../assets/img/materials/03.jpg');
+  }
+  &_04 {
+    background-image: url('../../assets/img/materials/04.jpg');
+  }
+
+  // .card-material__title
+  &__title {
+    @include fluid-text(40, 24);
+    font-weight: 700;
+    color: #fff;
+  }
+  @include hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  }
+}

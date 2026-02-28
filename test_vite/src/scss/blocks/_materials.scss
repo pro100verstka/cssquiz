@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.materials {
+  // .materials__inner
+  &__inner {
+  }
+
+  // .materials__title
+  &__title {
+    margin-bottom: fluid(60, 25);
+  }
+
+  // .materials__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: fluid(20, 15);
+  }
+
+  // .materials__item
+  &__item {
+  }
+}
+
