@@ -5,7 +5,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: rem(30);
     @include mobile {
       flex-direction: column;
     }
@@ -13,7 +13,7 @@
 
   // .delivery__content
   &__content {
-    max-width: 580px;
+    max-width: rem(580);
   }
 
   // .delivery__title
@@ -40,11 +40,11 @@
   &__step {
     position: relative;
     font-size: rem(16);
-    padding-left: 43px;
+    padding-left: rem(43);
     &::before {
       content: '';
-      width: 24px;
-      height: 24px;
+      width: rem(24);
+      height: rem(24);
       position: absolute;
       top: 0;
       left: 0;

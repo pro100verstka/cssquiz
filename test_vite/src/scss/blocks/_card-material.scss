@@ -6,9 +6,10 @@
   display: flex;
   align-items: flex-end;
   padding: fluid(40, 25);
-  border-radius: rem(8);
+  border-radius: var(--border-radius);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   transition: var(--transition-duration);
   cursor: pointer;
 
@@ -29,7 +30,7 @@
   &__title {
     @include fluid-text(40, 24);
     font-weight: 700;
-    color: #fff;
+    color: var(--color-light);
   }
   @include hover {
     transform: translateY(-20px);

@@ -14,8 +14,8 @@
   // .benefits__cards
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(rem(272), 1fr));
+    gap: rem(14);
   }
 
   // .benefits__card

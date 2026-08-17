@@ -12,10 +12,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    padding: 21px;
-    border-radius: 8px;
-    background-color: #f8f8f8;
+    gap: rem(24);
+    padding: rem(21);
+    border-radius: var(--border-radius);
+    background-color: var(--color-light-alt);
   }
 
   // .contacts__city
@@ -23,7 +23,7 @@
   &__phone {
     font-size: rem(18);
     font-weight: 500;
-    color: #393838;
+    color: var(--color-dark-alt);
   }
 
   // .contacts__address

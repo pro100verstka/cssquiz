@@ -4,10 +4,10 @@
   font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 25px;
+  gap: rem(20);
+  padding: rem(25);
   border: 1px solid #a8a8a8;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 
   // .card-benefit__icon
   &__icon {
@@ -16,9 +16,9 @@
   // .card-benefit__description
   &__description {
     font-weight: 500;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1.4;
-    color: #393838;
+    color: var(--color-dark-alt);
     span {
       color: var(--color-accent);
     }

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: rem(20);
     @include mobile {
       flex-direction: column;
     }
@@ -15,7 +15,7 @@
   // .about__content
   &__content {
     flex: 1.5;
-    max-width: 600px;
+    max-width: rem(600)
   }
 
   // .about__title
@@ -35,14 +35,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    max-width: 700px;
+    gap: rem(40);
+    max-width: rem(700);
     width: 100%;
     padding-top: fluid(105, 40);
     padding-bottom: fluid(145, 48);
     padding-inline: rem(75);
     border-radius: rem(24);
-    background-color: #f8f8f8;
+    background-color: var(--color-light-alt);
     @include tablet {
       flex-direction: column;
     }
